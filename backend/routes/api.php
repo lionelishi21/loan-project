@@ -27,7 +27,6 @@ Route::group(array('prefix'=>'/v1'),function(){
 Route::group(array('prefix' => '/v1'), function () {
     Route::post('/login', 'Api\Oauth\LoginController@login');
     Route::post('/login/refresh', 'Api\Oauth\LoginController@refresh');
-
     Route::post('forgot_password', 'Api\Oauth\ForgotPasswordController@forgotPassword');
     Route::post('reset_password', 'Api\Oauth\ForgotPasswordController@resetPassword');
 });
